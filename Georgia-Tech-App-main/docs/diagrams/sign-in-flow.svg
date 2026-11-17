@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="si" viewBox="0 0 720 406" role="img" aria-labelledby="si-t si-d">
+<title id="si-t">How GT sign-in works</title>
+<desc id="si-d">Eight steps: the app opens GT SSO in a system browser, GT SSO redirects to the GT App API with a one-time code, the API hands the code to the app, the app sends it back, the API exchanges it with GT SSO, checks the account, creates or updates the Firebase user and returns a sign-in token, and the app signs in to Firebase.</desc>
+<style>
+svg.si text { font-family: Roboto, "Helvetica Neue", Arial, sans-serif; fill: #242424; }
+svg.si .h { font-weight: 600; font-size: 10px; letter-spacing: .14em; fill: #8F713D; }
+svg.si .n { font-weight: 600; font-size: 12px; fill: #051E39; }
+svg.si .nb { font-weight: 600; font-size: 11px; fill: #051E39; }
+svg.si .s { font-weight: 400; font-size: 10.5px; fill: #515151; }
+svg.si .l { font-weight: 600; font-size: 10.5px; fill: #051E39; }
+svg.si .lg { font-weight: 600; font-size: 10.5px; fill: #8F713D; }
+svg.si .num { font-weight: 700; fill: #8F713D; }
+svg.si .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+svg.si .w { fill: #fff; }
+</style>
+<defs><marker id="si-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#051E39"/></marker><marker id="si-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8F713D"/></marker><marker id="si-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8A8A8A"/></marker></defs>
+<line x1="100" y1="36" x2="100" y2="364" stroke="#DCCFAE" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="280" y1="36" x2="280" y2="364" stroke="#DCCFAE" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="460" y1="36" x2="460" y2="364" stroke="#DCCFAE" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="640" y1="36" x2="640" y2="364" stroke="#DCCFAE" stroke-width="1.2" stroke-dasharray="4 4"/>
+<rect x="28" y="4" width="144" height="32" rx="6" fill="#051E39" stroke="#051E39" stroke-width="1.2"/>
+<text x="100" y="18" class="w" text-anchor="middle" style="font-weight:600;font-size:12px">Student's app</text>
+<text x="100" y="31" class="w" text-anchor="middle" style="font-size:10px;opacity:.85">iPhone</text>
+<rect x="208" y="4" width="144" height="32" rx="6" fill="#051E39" stroke="#051E39" stroke-width="1.2"/>
+<text x="280" y="18" class="w" text-anchor="middle" style="font-weight:600;font-size:12px">GT SSO</text>
+<text x="280" y="31" class="w" text-anchor="middle" style="font-size:10px;opacity:.85">OIT</text>
+<rect x="388" y="4" width="144" height="32" rx="6" fill="#051E39" stroke="#051E39" stroke-width="1.2"/>
+<text x="460" y="18" class="w" text-anchor="middle" style="font-weight:600;font-size:12px">GT App API</text>
+<text x="460" y="31" class="w" text-anchor="middle" style="font-size:10px;opacity:.85">Fly.io</text>
+<rect x="568" y="4" width="144" height="32" rx="6" fill="#051E39" stroke="#051E39" stroke-width="1.2"/>
+<text x="640" y="18" class="w" text-anchor="middle" style="font-weight:600;font-size:12px">Firebase Auth</text>
+<text x="640" y="31" class="w" text-anchor="middle" style="font-size:10px;opacity:.85">Google</text>
+<line x1="106" y1="64" x2="274" y2="64" stroke="#051E39" stroke-width="1.6" marker-end="url(#si-a)"/>
+<text x="190.0" y="58" class="l halo" text-anchor="middle"><tspan class="num">1</tspan> Open GT sign-in (system browser)</text>
+<rect x="292" y="70" width="156" height="32" rx="5" fill="#F7F3E8" stroke="#8F713D" stroke-width="1"/>
+<text x="300" y="84.0" class="s">Student signs in here. The app</text>
+<text x="300" y="96.5" class="s">never sees the password.</text>
+<line x1="286" y1="124" x2="454" y2="124" stroke="#051E39" stroke-width="1.6" marker-end="url(#si-a)"/>
+<text x="370.0" y="118" class="l halo" text-anchor="middle"><tspan class="num">2</tspan> Redirect with one-time code</text>
+<line x1="454" y1="156" x2="106" y2="156" stroke="#051E39" stroke-width="1.6" marker-end="url(#si-a)"/>
+<text x="280.0" y="150" class="l halo" text-anchor="middle"><tspan class="num">3</tspan> Hand the code back (gtapp://)</text>
+<line x1="106" y1="188" x2="454" y2="188" stroke="#051E39" stroke-width="1.6" marker-end="url(#si-a)"/>
+<text x="280.0" y="182" class="l halo" text-anchor="middle"><tspan class="num">4</tspan> Send the code to auth/gt/verify</text>
+<line x1="454" y1="220" x2="286" y2="220" stroke="#051E39" stroke-width="1.6" marker-end="url(#si-a)"/>
+<text x="370.0" y="214" class="l halo" text-anchor="middle"><tspan class="num">5</tspan> Exchange code, get profile</text>
+<line x1="286" y1="244" x2="454" y2="244" stroke="#051E39" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#si-a)"/>
+<text x="370.0" y="238" class="l halo" text-anchor="middle">Email, name, subject ID</text>
+<rect x="472" y="200" width="156" height="32" rx="5" fill="#F7F3E8" stroke="#8F713D" stroke-width="1"/>
+<text x="480" y="214.0" class="s">The client secret is held only</text>
+<text x="480" y="226.5" class="s">by the backend.</text>
+<line x1="466" y1="286" x2="634" y2="286" stroke="#051E39" stroke-width="1.6" marker-end="url(#si-a)"/>
+<text x="550.0" y="280" class="l halo" text-anchor="middle"><tspan class="num">6</tspan> Create or update the user</text>
+<rect x="292" y="256" width="156" height="32" rx="5" fill="#F7F3E8" stroke="#8F713D" stroke-width="1"/>
+<text x="300" y="270.0" class="s">Only @gatech.edu accounts</text>
+<text x="300" y="282.5" class="s">are accepted.</text>
+<line x1="454" y1="320" x2="106" y2="320" stroke="#051E39" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#si-a)"/>
+<text x="280.0" y="314" class="l halo" text-anchor="middle"><tspan class="num">7</tspan> Firebase sign-in token</text>
+<line x1="106" y1="352" x2="634" y2="352" stroke="#051E39" stroke-width="1.6" marker-end="url(#si-a)"/>
+<text x="370.0" y="346" class="l halo" text-anchor="middle"><tspan class="num">8</tspan> Sign in with the token</text>
+<rect x="10" y="374" width="700" height="24" rx="5" fill="#fff" stroke="#8A8A8A" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="360" y="390" class="s" text-anchor="middle">Guests skip steps 1 to 7: the app signs in anonymously with Firebase directly.</text>
+</svg>

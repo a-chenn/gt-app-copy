@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="rf" viewBox="0 0 720 436" role="img" aria-labelledby="rf-t rf-d">
+<title id="rf-t">How often each data source refreshes</title>
+<desc id="rf-d">Twelve rows show each source's backend refresh interval: live, hourly, daily, weekly, on request, or by hand. Campus locations, appliances, dining hours and academic dates are loaded by hand.</desc>
+<style>
+svg.rf text { font-family: Roboto, "Helvetica Neue", Arial, sans-serif; fill: #242424; }
+svg.rf .h { font-weight: 600; font-size: 10px; letter-spacing: .14em; fill: #8F713D; }
+svg.rf .n { font-weight: 600; font-size: 12px; fill: #051E39; }
+svg.rf .nb { font-weight: 600; font-size: 11px; fill: #051E39; }
+svg.rf .s { font-weight: 400; font-size: 10.5px; fill: #515151; }
+svg.rf .l { font-weight: 600; font-size: 10.5px; fill: #051E39; }
+svg.rf .lg { font-weight: 600; font-size: 10.5px; fill: #8F713D; }
+svg.rf .num { font-weight: 700; fill: #8F713D; }
+svg.rf .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+svg.rf .w { fill: #fff; }
+</style>
+<defs><marker id="rf-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#051E39"/></marker><marker id="rf-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8F713D"/></marker><marker id="rf-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8A8A8A"/></marker></defs>
+<text x="222" y="18" class="h">AUTOMATIC</text>
+<text x="540" y="18" class="h" fill="#8F713D">BY HAND</text>
+<line x1="222" y1="26" x2="536" y2="26" stroke="#051E39" stroke-width="2"/>
+<line x1="540" y1="26" x2="710" y2="26" stroke="#8F713D" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="252.0" y="48" class="l" text-anchor="middle">Live</text>
+<text x="312.0" y="48" class="l" text-anchor="middle">Hourly</text>
+<text x="372.0" y="48" class="l" text-anchor="middle">Daily</text>
+<text x="432.0" y="48" class="l" text-anchor="middle">Weekly</text>
+<text x="501.0" y="48" class="l" text-anchor="middle">On request</text>
+<text x="550" y="48" class="l">By hand</text>
+<rect x="10" y="58" width="700" height="29" fill="#FBF9F3"/>
+<rect x="10" y="116" width="700" height="29" fill="#FBF9F3"/>
+<rect x="10" y="174" width="700" height="29" fill="#FBF9F3"/>
+<rect x="10" y="232" width="700" height="29" fill="#FBF9F3"/>
+<rect x="10" y="290" width="700" height="29" fill="#FBF9F3"/>
+<rect x="10" y="348" width="700" height="29" fill="#FBF9F3"/>
+<line x1="282" y1="58" x2="282" y2="406" stroke="#DCCFAE" stroke-width=".7"/>
+<line x1="342" y1="58" x2="342" y2="406" stroke="#DCCFAE" stroke-width=".7"/>
+<line x1="402" y1="58" x2="402" y2="406" stroke="#DCCFAE" stroke-width=".7"/>
+<line x1="462" y1="58" x2="462" y2="406" stroke="#DCCFAE" stroke-width=".7"/>
+<line x1="540" y1="58" x2="540" y2="406" stroke="#DCCFAE" stroke-width=".7"/>
+<text x="14" y="71" class="nb">Buses</text>
+<text x="14" y="83" class="s">TransLoc · 6 s map, 30 s Home</text>
+<circle cx="252.0" cy="72.5" r="6.5" fill="#051E39"/>
+<text x="14" y="100" class="nb">Building occupancy</text>
+<text x="14" y="112" class="s">Waitz</text>
+<circle cx="312.0" cy="101.5" r="6.5" fill="#051E39"/>
+<text x="14" y="129" class="nb">Events</text>
+<text x="14" y="141" class="s">GT news and events feed</text>
+<circle cx="312.0" cy="130.5" r="6.5" fill="#051E39"/>
+<text x="14" y="158" class="nb">News</text>
+<text x="14" y="170" class="s">GT news and events feed</text>
+<circle cx="312.0" cy="159.5" r="6.5" fill="#051E39"/>
+<text x="14" y="187" class="nb">Dining menus</text>
+<text x="14" y="199" class="s">Nutrislice</text>
+<circle cx="372.0" cy="188.5" r="6.5" fill="#051E39"/>
+<text x="14" y="216" class="nb">Engage events</text>
+<text x="14" y="228" class="s">public API · not in the app yet</text>
+<circle cx="372.0" cy="217.5" r="6.5" fill="#051E39"/>
+<text x="14" y="245" class="nb">Engage organizations</text>
+<text x="14" y="257" class="s">public API · not in the app yet</text>
+<circle cx="432.0" cy="246.5" r="6.5" fill="#051E39"/>
+<text x="14" y="274" class="nb">Course sections</text>
+<text x="14" y="286" class="s">OSCAR · not in the app yet</text>
+<circle cx="501.0" cy="275.5" r="6.5" fill="#051E39"/>
+<text x="14" y="303" class="nb">Dining hours</text>
+<text x="14" y="315" class="s">entered by our team</text>
+<polygon points="557,296.5 565,304.5 557,312.5 549,304.5" fill="#8F713D"/>
+<text x="572" y="308" class="s">Edited in the database</text>
+<text x="14" y="332" class="nb">Campus locations</text>
+<text x="14" y="344" class="s">GT Maps API snapshot</text>
+<polygon points="557,325.5 565,333.5 557,341.5 549,333.5" fill="#8F713D"/>
+<text x="572" y="337" class="s">Loaded Apr 21, 2026</text>
+<text x="14" y="361" class="nb">Appliances</text>
+<text x="14" y="373" class="s">printers, microwaves, vending</text>
+<polygon points="557,354.5 565,362.5 557,370.5 549,362.5" fill="#8F713D"/>
+<text x="572" y="361" class="s">Printers Oct 29, 2026</text>
+<text x="572" y="373" class="s">Microwaves, vending Oct 17</text>
+<text x="14" y="390" class="nb">Academic dates</text>
+<text x="14" y="402" class="s">Registrar's calendar</text>
+<polygon points="557,383.5 565,391.5 557,399.5 549,391.5" fill="#8F713D"/>
+<text x="572" y="395" class="s">When GT publishes it</text>
+<text x="10" y="428" class="s">Backend refresh is shown. The app picks up changes at each launch; it polls bus data itself while buses are on screen.</text>
+</svg>

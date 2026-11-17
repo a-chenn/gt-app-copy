@@ -1,0 +1,86 @@
+@font-face { font-family: "Roboto"; font-weight: 400; src: url("__FONT_DIR__/Roboto-Regular.ttf"); }
+@font-face { font-family: "Roboto"; font-weight: 600; src: url("__FONT_DIR__/Roboto-SemiBold.ttf"); }
+@font-face { font-family: "Roboto Slab"; font-weight: 600; src: url("__FONT_DIR__/RobotoSlab-SemiBold.ttf"); }
+
+:root {
+  --navy: #051E39;
+  --gold: #B39051;
+  --dark-gold: #8F713D;
+  --ink: #242424;
+  --muted: #515151;
+  --cream: #F7F3E8;
+  --rule: #DCCFAE;
+  --gray: #E9EAE9;
+}
+
+@page {
+  size: Letter;
+  margin: 0.7in 0.7in 0.8in 0.7in;
+  @bottom-left   { content: "GT App Data Feature Map  ·  __DATE__";
+                   font: 400 7.5pt "Roboto"; color: #7a7a7a; vertical-align: top; padding-top: 10pt; }
+  @bottom-right  { content: counter(page) " of " counter(pages);
+                   font: 400 7.5pt "Roboto"; color: #7a7a7a; vertical-align: top; padding-top: 10pt; }
+}
+@page :first {
+  @bottom-left { content: "GT iOS Club  ·  in partnership with SGA";
+                 font: 400 7.5pt "Roboto"; color: #7a7a7a; vertical-align: top; padding-top: 10pt; }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: "Roboto", sans-serif; font-size: 9.3pt; line-height: 1.45; color: var(--ink); margin: 0; }
+
+/* ---- Title block ---- */
+.masthead { border-top: 6pt solid var(--navy); padding-top: 16pt; margin-bottom: 14pt; }
+.eyebrow { font-weight: 600; font-size: 7.5pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dark-gold); margin: 0 0 6pt; }
+h1 { font-family: "Roboto Slab", serif; font-weight: 600; font-size: 29pt; line-height: 1.1; color: var(--navy); margin: 0 0 8pt; }
+.subtitle { font-size: 9pt; color: var(--muted); margin: 0 0 12pt; padding-bottom: 12pt; border-bottom: 1.2pt solid var(--gold); }
+.intro { font-size: 10.5pt; line-height: 1.5; color: var(--ink); margin: 0 0 4pt; max-width: 6.2in; }
+
+/* ---- Headings ---- */
+h2 { font-family: "Roboto Slab", serif; font-weight: 600; font-size: 15pt; color: var(--navy);
+     margin: 24pt 0 10pt; padding-bottom: 5pt; border-bottom: 0.75pt solid var(--rule); break-after: avoid; }
+h2::before { content: ""; display: inline-block; width: 5pt; height: 5pt; background: var(--gold); margin-right: 8pt; vertical-align: 2pt; }
+h3 { font-family: "Roboto Slab", serif; font-weight: 600; font-size: 11pt; color: var(--navy); margin: 16pt 0 6pt; break-after: avoid; }
+h2 + h3 { margin-top: 4pt; }
+
+p { margin: 0 0 7pt; }
+strong { font-weight: 600; color: var(--navy); }
+code { font-family: "SF Mono", Menlo, monospace; font-size: 0.88em; background: var(--gray); padding: 0.5pt 3pt; border-radius: 2pt; }
+a { color: var(--navy); text-decoration: none; }
+ul { margin: 0 0 8pt; padding-left: 13pt; }
+li { margin: 0 0 3.5pt; padding-left: 2pt; }
+li::marker { color: var(--gold); }
+
+/* ---- Tables ---- */
+table { width: 100%; border-collapse: collapse; font-size: 8pt; line-height: 1.4; margin: 6pt 0 10pt; }
+th, td { text-align: left; vertical-align: top; padding: 4.5pt 6.5pt; border: 0.5pt solid var(--rule); }
+thead th { background: var(--navy); color: #fff; font-weight: 600; font-size: 7.6pt; letter-spacing: 0.02em; border-color: var(--navy); }
+tbody tr { break-inside: avoid; }
+tbody tr:nth-child(even) td { background: #FBF9F3; }
+td:first-child { font-weight: 600; color: var(--navy); }
+
+table.kv { margin-top: 2pt; }
+table.kv td { background: #fff !important; font-size: 8.4pt; }
+table.kv td:first-child { width: 20%; background: var(--cream) !important; font-size: 7.8pt; letter-spacing: 0.01em; }
+
+/* each data-source block stays whole */
+.src { break-inside: avoid; margin-bottom: 4pt; }
+.src table { margin-bottom: 8pt; }
+
+/* the overview table is wide: give the first and last columns room */
+table.glance td:nth-child(1) { width: 13%; }
+table.glance td:nth-child(6) { width: 13%; }
+
+table.compact td:first-child { width: 22%; }
+
+table.stored td:nth-child(3) { width: 1.55in; }
+table.kv th, table.kv td { padding: 3.6pt 6.5pt; }
+.src { margin-bottom: 0; }
+h3 { margin-top: 12pt; }
+
+/* ---- Figures (inline SVG diagrams) ---- */
+figure { margin: 12pt 0 14pt; break-inside: avoid; }
+figure svg { display: block; width: 100%; height: auto; }
+figcaption { font-size: 7.8pt; line-height: 1.4; color: var(--muted); margin-top: 6pt; padding-top: 5pt; border-top: 0.5pt solid var(--rule); }
+figcaption strong { color: var(--dark-gold); }

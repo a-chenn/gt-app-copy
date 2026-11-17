@@ -1,0 +1,127 @@
+disabled_rules:
+  - trailing_whitespace
+  - identifier_name
+  - line_length
+  - function_body_length
+  - type_body_length
+  - implicit_optional_initialization
+  - function_parameter_count
+  - cyclomatic_complexity
+  - unused_closure_parameter
+
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+
+excluded:
+  - Pods
+  - .build
+  - GeorgiaTechAppTests
+  - GeorgiaTechAppUITests
+
+file_length:
+  warning: 600
+  error: 750
+  
+custom_rules:
+  no_environment_object:
+    name: "No @EnvironmentObject"
+    regex: "@EnvironmentObject"
+    message: "Use @Environment instead"
+    severity: error
+
+  no_observable_object:
+    name: "No ObservableObject"
+    regex: "ObservableObject"
+    message: "Use @Observable macro above the model instead"
+    severity: error
+
+  no_published:
+    name: "No @Published"
+    regex: "@Published"
+    message: "Remove @Published, just use a regular var with the @Observable model"
+    severity: error
+
+  no_state_object:
+    name: "No @StateObject"
+    regex: "@StateObject"
+    message: "Use @State with @Observable models"
+    severity: error
+
+  no_observed_object:
+    name: "No @ObservedObject"
+    regex: "@ObservedObject"
+    message: "Use @Environment or @Bindable instead"
+    severity: error
+
+  no_uikit_import:
+    name: "No UIKit"
+    regex: "import UIKit"
+    message: "Use SwiftUI instead of UIKit"
+    severity: error
+
+  no_force_cast:
+    name: "No force cast"
+    regex: "as!"
+    message: "Avoid force casting, use as? instead"
+    severity: error
+    
+  no_dispatchqueue:
+    name: "No DispatchQueue"
+    regex: "DispatchQueue"
+    message: "Use async/await and actors instead of DispatchQueue"
+    severity: error
+
+  no_completion_handlers:
+    name: "No completion handlers"
+    regex: "completionHandler|completion: @escaping"
+    message: "Use async/await instead of completion handlers"
+    severity: error
+
+  no_notification_center:
+    name: "No NotificationCenter"
+    regex: "NotificationCenter"
+    message: "Use @Observable or environment values for state sharing instead"
+    severity: error
+
+  no_main_async:
+    name: "No DispatchQueue.main.async"
+    regex: "DispatchQueue\\.main\\.async"
+    message: "Use @MainActor or await MainActor.run instead"
+    severity: error
+    
+  no_weak_self:
+    name: "No [weak self]"
+    regex: "\\[weak self\\]"
+    message: "Use @MainActor instead of [weak self] captures"
+    severity: error
+
+  no_semaphore:
+    name: "No DispatchSemaphore"
+    regex: "DispatchSemaphore"
+    message: "Use async/await instead of semaphores"
+    severity: error
+
+  no_operation_queue:
+    name: "No OperationQueue"
+    regex: "OperationQueue"
+    message: "Use async/await and Task instead of OperationQueue"
+    severity: error
+
+  no_thread:
+    name: "No Thread"
+    regex: "Thread\\."
+    message: "Use async/await and actors instead of Thread"
+    severity: error
+
+  no_uiscreen:
+    name: "No UIScreen"
+    regex: "UIScreen\\.main"
+    message: "Use GeometryReader or Container instead of UIScreen.main"
+    severity: error
+
+  no_hardcoded_colors:
+    name: "No hardcoded colors"
+    regex: "Color\\.(red|blue|green|yellow|black|white|gray|orange|purple|pink)(?![A-Z])"
+    message: "Use Color.gt* from Core/Utilities/Extensions/Color.swift instead of hardcoded colors"
+    severity: error

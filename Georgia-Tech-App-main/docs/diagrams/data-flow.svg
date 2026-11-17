@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="df" viewBox="0 0 720 492" role="img" aria-labelledby="df-t df-d">
+<title id="df-t">How campus data reaches the app</title>
+<desc id="df-d">Eight sources feed the GT App API, which stores data in MongoDB Atlas and sends changes to the phone at launch. Bus data goes straight from TransLoc to the phone.</desc>
+<style>
+svg.df text { font-family: Roboto, "Helvetica Neue", Arial, sans-serif; fill: #242424; }
+svg.df .h { font-weight: 600; font-size: 10px; letter-spacing: .14em; fill: #8F713D; }
+svg.df .n { font-weight: 600; font-size: 12px; fill: #051E39; }
+svg.df .nb { font-weight: 600; font-size: 11px; fill: #051E39; }
+svg.df .s { font-weight: 400; font-size: 10.5px; fill: #515151; }
+svg.df .l { font-weight: 600; font-size: 10.5px; fill: #051E39; }
+svg.df .lg { font-weight: 600; font-size: 10.5px; fill: #8F713D; }
+svg.df .num { font-weight: 700; fill: #8F713D; }
+svg.df .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+svg.df .w { fill: #fff; }
+</style>
+<defs><marker id="df-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#051E39"/></marker><marker id="df-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8F713D"/></marker><marker id="df-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8A8A8A"/></marker></defs>
+<text x="10" y="12" class="h">SOURCES</text>
+<text x="300" y="12" class="h">OUR BACKEND</text>
+<text x="550" y="12" class="h">THE PHONE</text>
+<rect x="550" y="20" width="160" height="314" rx="14" fill="#F7F3E8" stroke="#051E39" stroke-width="1.2"/>
+<rect x="562" y="30" width="136" height="42" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="572" y="48" class="nb">Live buses</text>
+<text x="572" y="63" class="s">in memory, never saved</text>
+<rect x="562" y="112" width="136" height="208" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="572" y="130" class="nb">Saved on the phone</text>
+<text x="572" y="145" class="s">Cache for offline use,</text>
+<text x="572" y="158" class="s">replaced at each sync:</text>
+<text x="572" y="180" class="s" fill="#242424">Dining</text>
+<text x="572" y="197" class="s" fill="#242424">Building occupancy</text>
+<text x="572" y="214" class="s" fill="#242424">Events and news</text>
+<text x="572" y="231" class="s" fill="#242424">Academic dates</text>
+<text x="572" y="248" class="s" fill="#242424">Campus locations</text>
+<text x="572" y="265" class="s" fill="#242424">Appliances</text>
+<text x="572" y="282" class="s" fill="#242424">Bus routes and stops</text>
+<rect x="10" y="30" width="200" height="42" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="22" y="48" class="n">TransLoc bus relay</text>
+<text x="22" y="63" class="s">bus.gatech.edu · live buses</text>
+<line x1="210" y1="51" x2="562" y2="51" stroke="#051E39" stroke-width="1.6" marker-end="url(#df-a)"/>
+<text x="386" y="44" class="l" text-anchor="middle">Direct from the phone, not through our backend</text>
+<text x="386" y="66" class="s" text-anchor="middle">Routes at launch · live positions every 6 s (map), 30 s (Home)</text>
+<rect x="10" y="90" width="200" height="38" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="22" y="106" class="n">Nutrislice</text>
+<text x="22" y="120" class="s">Dining menus</text>
+<line x1="210" y1="109" x2="300" y2="109" stroke="#051E39" stroke-width="1.6" marker-end="url(#df-a)"/>
+<text x="255" y="104" class="l" text-anchor="middle">daily</text>
+<rect x="10" y="135" width="200" height="38" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="22" y="151" class="n">Waitz</text>
+<text x="22" y="165" class="s">Building occupancy</text>
+<line x1="210" y1="154" x2="300" y2="154" stroke="#051E39" stroke-width="1.6" marker-end="url(#df-a)"/>
+<text x="255" y="149" class="l" text-anchor="middle">hourly</text>
+<rect x="10" y="180" width="200" height="38" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="22" y="196" class="n">GT news and events feed</text>
+<text x="22" y="210" class="s">Events and news</text>
+<line x1="210" y1="199" x2="300" y2="199" stroke="#051E39" stroke-width="1.6" marker-end="url(#df-a)"/>
+<text x="255" y="194" class="l" text-anchor="middle">hourly</text>
+<rect x="10" y="225" width="200" height="38" rx="6" fill="#fff" stroke="#8A8A8A" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="22" y="241" class="n">Engage (public API)</text>
+<text x="22" y="255" class="s">Org events · not in the app yet</text>
+<line x1="210" y1="244" x2="300" y2="244" stroke="#8A8A8A" stroke-width="1.6" stroke-dasharray="2 3" marker-end="url(#df-m)"/>
+<text x="255" y="239" class="l" text-anchor="middle">daily · weekly</text>
+<rect x="10" y="270" width="200" height="38" rx="6" fill="#F7F3E8" stroke="#8F713D" stroke-width="1.2"/>
+<text x="22" y="286" class="n">GT Maps API (saved file)</text>
+<text x="22" y="300" class="s">Campus locations</text>
+<line x1="210" y1="289" x2="300" y2="289" stroke="#8F713D" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#df-g)"/>
+<text x="255" y="284" class="lg" text-anchor="middle">by hand</text>
+<rect x="10" y="315" width="200" height="38" rx="6" fill="#F7F3E8" stroke="#8F713D" stroke-width="1.2"/>
+<text x="22" y="331" class="n">Registrar academic calendar</text>
+<text x="22" y="345" class="s">Academic dates</text>
+<line x1="210" y1="334" x2="300" y2="334" stroke="#8F713D" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#df-g)"/>
+<text x="255" y="329" class="lg" text-anchor="middle">by hand</text>
+<rect x="10" y="360" width="200" height="38" rx="6" fill="#F7F3E8" stroke="#8F713D" stroke-width="1.2"/>
+<text x="22" y="376" class="n">OIT printing map + our team</text>
+<text x="22" y="390" class="s">Printers, microwaves, vending</text>
+<line x1="210" y1="379" x2="300" y2="379" stroke="#8F713D" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#df-g)"/>
+<text x="255" y="374" class="lg" text-anchor="middle">by hand</text>
+<rect x="10" y="405" width="200" height="38" rx="6" fill="#fff" stroke="#8A8A8A" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="22" y="421" class="n">OSCAR (Banner 9)</text>
+<text x="22" y="435" class="s">Course lookup · not in the app yet</text>
+<line x1="210" y1="424" x2="300" y2="424" stroke="#8A8A8A" stroke-width="1.6" stroke-dasharray="2 3" marker-end="url(#df-m)"/>
+<text x="255" y="419" class="l" text-anchor="middle">on request</text>
+<rect x="300" y="90" width="160" height="353" rx="8" fill="#EEF2F7" stroke="#051E39" stroke-width="1.2"/>
+<text x="312" y="110" class="n">GT App API</text>
+<text x="312" y="124" class="s">Fly.io · Ashburn, Virginia</text>
+<rect x="312" y="136" width="136" height="48" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="322" y="156" class="nb">Scheduled pulls</text>
+<text x="322" y="170" class="s">and manual loads</text>
+<rect x="312" y="206" width="136" height="48" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="322" y="226" class="nb">MongoDB Atlas</text>
+<text x="322" y="240" class="s">Virginia · current data</text>
+<rect x="312" y="276" width="136" height="48" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="322" y="296" class="nb">Read endpoints</text>
+<text x="322" y="310" class="s">public, no sign-in needed</text>
+<line x1="380" y1="184" x2="380" y2="206" stroke="#051E39" stroke-width="1.6" marker-end="url(#df-a)"/>
+<line x1="380" y1="254" x2="380" y2="276" stroke="#051E39" stroke-width="1.6" marker-end="url(#df-a)"/>
+<rect x="312" y="358" width="136" height="66" rx="6" fill="#fff" stroke="#8A8A8A" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="322" y="377" class="nb">Course lookups</text>
+<text x="322" y="391" class="s">answered live, held 60 s</text>
+<text x="322" y="404" class="s">in memory, never saved</text>
+<line x1="460" y1="300" x2="562" y2="300" stroke="#051E39" stroke-width="1.6" marker-end="url(#df-a)"/>
+<text x="511" y="292" class="l" text-anchor="middle">launch sync</text>
+<text x="511" y="316" class="s" text-anchor="middle">changes only</text>
+<line x1="10" y1="472" x2="42" y2="472" stroke="#051E39" stroke-width="1.6" marker-end="url(#df-a)"/>
+<text x="50" y="476" class="s">Pulled automatically</text>
+<line x1="210" y1="472" x2="242" y2="472" stroke="#8F713D" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#df-g)"/>
+<text x="250" y="476" class="s">Loaded by hand by our team</text>
+<rect x="452" y="464" width="26" height="16" rx="3" fill="#fff" stroke="#8A8A8A" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="486" y="476" class="s">Not used by the app yet</text>
+</svg>

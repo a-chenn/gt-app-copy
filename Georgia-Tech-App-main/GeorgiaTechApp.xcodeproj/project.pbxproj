@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		660190412F88608400B1BC46 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 660190402F88608400B1BC46 /* FirebaseAuth */; };
+		660E91592F2C1FAB00F64494 /* Package.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 660E91582F2C1FAB00F64494 /* Package.resolved */; };
+		661DB55B2F757EA20024F7F1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 661DB55A2F757EA20024F7F1 /* FirebaseAnalytics */; };
+		661DB55D2F757EA20024F7F1 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 661DB55C2F757EA20024F7F1 /* FirebaseAppCheck */; };
+		661DB55F2F757EA20024F7F1 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 661DB55E2F757EA20024F7F1 /* FirebaseCrashlytics */; };
+		661DB5612F757EA20024F7F1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 661DB5602F757EA20024F7F1 /* FirebaseStorage */; };
+		661DB5632F757F900024F7F1 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 661DB5622F757F900024F7F1 /* FirebaseCore */; };
+		663EAAC62F788992003108C6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 663EAAC52F78898A003108C6 /* .swiftlint.yml */; };
+		66FB5723307D97D0008BCB48 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66FB5722307D97D0008BCB48 /* Secrets.plist */; };
+		66FB5724307D97D0008BCB48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66FB5721307D97D0008BCB48 /* GoogleService-Info.plist */; };
+		66FB5725307D97D0008BCB48 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66FB5722307D97D0008BCB48 /* Secrets.plist */; };
+		66FB5726307D97D0008BCB48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66FB5721307D97D0008BCB48 /* GoogleService-Info.plist */; };
+		66FB5727307D97D0008BCB48 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66FB5722307D97D0008BCB48 /* Secrets.plist */; };
+		B079FBFB30AB2040005A2801 /* GTBusRectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B079FBFA30AB2040005A2801 /* GTBusRectangularView.swift */; };
+		B079FBFD30AB20A5005A2801 /* GTBusInlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B079FBFC30AB20A5005A2801 /* GTBusInlineView.swift */; };
+		FC3F2EE0309D575600098D46 /* BusArrivalsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2ED8309D575600098D46 /* BusArrivalsWidget.swift */; };
+		FC3F2EE1309D575600098D46 /* GTBusWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2EDE309D575600098D46 /* GTBusWidgetProvider.swift */; };
+		FC3F2EE2309D575600098D46 /* GTBusSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2EDA309D575600098D46 /* GTBusSmallView.swift */; };
+		FC3F2EE3309D575600098D46 /* GTBusWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2EDC309D575600098D46 /* GTBusWidgetEntry.swift */; };
+		FC3F2EE4309D575600098D46 /* GTBusWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2EDD309D575600098D46 /* GTBusWidgetIntent.swift */; };
+		FC3F2EE5309D575600098D46 /* GTBusMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2ED9309D575600098D46 /* GTBusMediumView.swift */; };
+		FC3F2EE6309D575600098D46 /* GTBusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2EDB309D575600098D46 /* GTBusWidget.swift */; };
+		FCDC1CC83077E60C00C53659 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDC1CC73077E60C00C53659 /* WidgetKit.framework */; };
+		FCDC1CCA3077E60C00C53659 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDC1CC93077E60C00C53659 /* SwiftUI.framework */; };
+		FCDC1CD73077E60D00C53659 /* GTCapacityWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FCDC1CC53077E60C00C53659 /* GTCapacityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		660E90E12F2C1B8400F64494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 660E90C92F2C1B8200F64494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 660E90D02F2C1B8200F64494;
+			remoteInfo = GeorgiaTechApp;
+		};
+		FCDC1CD53077E60D00C53659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 660E90C92F2C1B8200F64494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCDC1CC43077E60C00C53659;
+			remoteInfo = GTCapacityWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCDC1CD83077E60D00C53659 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FCDC1CD73077E60D00C53659 /* GTCapacityWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		660E90D12F2C1B8200F64494 /* GeorgiaTechApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeorgiaTechApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		660E90E02F2C1B8400F64494 /* GeorgiaTechAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeorgiaTechAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		660E91542F2C1FA200F64494 /* AGENT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENT.md; sourceTree = "<group>"; };
+		660E91582F2C1FAB00F64494 /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
+		663EAAC52F78898A003108C6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		66FB5721307D97D0008BCB48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		66FB5722307D97D0008BCB48 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		B079FBFA30AB2040005A2801 /* GTBusRectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBusRectangularView.swift; sourceTree = "<group>"; };
+		B079FBFC30AB20A5005A2801 /* GTBusInlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBusInlineView.swift; sourceTree = "<group>"; };
+		FC3F2ED8309D575600098D46 /* BusArrivalsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalsWidget.swift; sourceTree = "<group>"; };
+		FC3F2ED9309D575600098D46 /* GTBusMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBusMediumView.swift; sourceTree = "<group>"; };
+		FC3F2EDA309D575600098D46 /* GTBusSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBusSmallView.swift; sourceTree = "<group>"; };
+		FC3F2EDB309D575600098D46 /* GTBusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBusWidget.swift; sourceTree = "<group>"; };
+		FC3F2EDC309D575600098D46 /* GTBusWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBusWidgetEntry.swift; sourceTree = "<group>"; };
+		FC3F2EDD309D575600098D46 /* GTBusWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBusWidgetIntent.swift; sourceTree = "<group>"; };
+		FC3F2EDE309D575600098D46 /* GTBusWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBusWidgetProvider.swift; sourceTree = "<group>"; };
+		FCDC1CC53077E60C00C53659 /* GTCapacityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GTCapacityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDC1CC73077E60C00C53659 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FCDC1CC93077E60C00C53659 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		66DC17EF2FFF24B600B15987 /* Exceptions for ".github" folder in "GeorgiaTechApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PULL_REQUEST_TEMPLATE.md,
+			);
+			target = 660E90D02F2C1B8200F64494 /* GeorgiaTechApp */;
+		};
+		66DC17F02FFF24B600B15987 /* Exceptions for "GeorgiaTechApp" folder in "GeorgiaTechApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/Models/README.md,
+				"Core/Models/UI Models/README.md",
+				Core/Services/README.md,
+				Core/Utilities/README.md,
+				Features/Map/Views/README.md,
+				Features/Search/Domain/README.md,
+				Info.plist,
+			);
+			target = 660E90D02F2C1B8200F64494 /* GeorgiaTechApp */;
+		};
+		FCDC1CDC3077E60D00C53659 /* Exceptions for "GTCapacityWidget" folder in "GTCapacityWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FCDC1CC43077E60C00C53659 /* GTCapacityWidgetExtension */;
+		};
+		FCDC1CE63078347300C53659 /* Exceptions for "GeorgiaTechApp" folder in "GTCapacityWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/Models/JSON/BuildingCapacityJSON.swift,
+				Core/Models/JSON/BusStopEstimateJSON.swift,
+				Core/Models/JSON/EventJSON.swift,
+				"Core/Models/UI Models/BusStopEstimate.swift",
+				Core/Utilities/APIUtility.swift,
+				Core/Utilities/CapacityLevel.swift,
+				Core/Utilities/DiningHours.swift,
+				Core/Utilities/EventDateParser.swift,
+				Core/Utilities/EventGameDay.swift,
+				Core/Utilities/Extensions/Color.swift,
+				"Core/Utilities/Extensions/Font+GT.swift",
+				"Core/Utilities/Extensions/URLResponse+Validation.swift",
+				Features/Map/Services/BusPrediction/BusPredictionModels.swift,
+				Resources/Assets.xcassets,
+				"Resources/Fonts/Roboto-OFL.txt",
+				"Resources/Fonts/Roboto-Regular.ttf",
+				"Resources/Fonts/Roboto-SemiBold.ttf",
+				"Resources/Fonts/RobotoSlab-Apache-2.0.txt",
+				"Resources/Fonts/RobotoSlab-SemiBold.ttf",
+			);
+			target = FCDC1CC43077E60C00C53659 /* GTCapacityWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		660E90D32F2C1B8200F64494 /* GeorgiaTechApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				66DC17F02FFF24B600B15987 /* Exceptions for "GeorgiaTechApp" folder in "GeorgiaTechApp" target */,
+				FCDC1CE63078347300C53659 /* Exceptions for "GeorgiaTechApp" folder in "GTCapacityWidgetExtension" target */,
+			);
+			explicitFolders = (
+				"Resources/live-arrival-times",
+			);
+			path = GeorgiaTechApp;
+			sourceTree = "<group>";
+		};
+		663EAAD52F79655F003108C6 /* .github */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				66DC17EF2FFF24B600B15987 /* Exceptions for ".github" folder in "GeorgiaTechApp" target */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		FCDC1CCB3077E60C00C53659 /* GTCapacityWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FCDC1CDC3077E60D00C53659 /* Exceptions for "GTCapacityWidget" folder in "GTCapacityWidgetExtension" target */,
+			);
+			path = GTCapacityWidget;
+			sourceTree = "<group>";
+		};
+		FCDC21983081633700C53659 /* GTDiningWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GTDiningWidget;
+			sourceTree = "<group>";
+		};
+		FCDC2E103090A1B200C53659 /* GTEventsWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GTEventsWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		660E90CE2F2C1B8200F64494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661DB55F2F757EA20024F7F1 /* FirebaseCrashlytics in Frameworks */,
+				660190412F88608400B1BC46 /* FirebaseAuth in Frameworks */,
+				661DB5632F757F900024F7F1 /* FirebaseCore in Frameworks */,
+				661DB5612F757EA20024F7F1 /* FirebaseStorage in Frameworks */,
+				661DB55D2F757EA20024F7F1 /* FirebaseAppCheck in Frameworks */,
+				661DB55B2F757EA20024F7F1 /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660E90DD2F2C1B8400F64494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDC1CC23077E60C00C53659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDC1CCA3077E60C00C53659 /* SwiftUI.framework in Frameworks */,
+				FCDC1CC83077E60C00C53659 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		660E90C82F2C1B8200F64494 = {
+			isa = PBXGroup;
+			children = (
+				FCDC21983081633700C53659 /* GTDiningWidget */,
+				66FB5720307D97BF008BCB48 /* Config */,
+				660E90D32F2C1B8200F64494 /* GeorgiaTechApp */,
+				FC3F2EDF309D575600098D46 /* GTBusWidget */,
+				663EAAD52F79655F003108C6 /* .github */,
+				660E91542F2C1FA200F64494 /* AGENT.md */,
+				660E91582F2C1FAB00F64494 /* Package.resolved */,
+				663EAAC52F78898A003108C6 /* .swiftlint.yml */,
+				FCDC1CCB3077E60C00C53659 /* GTCapacityWidget */,
+				FCDC2E103090A1B200C53659 /* GTEventsWidget */,
+				FCDC1CC63077E60C00C53659 /* Frameworks */,
+				660E90D22F2C1B8200F64494 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		660E90D22F2C1B8200F64494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				660E90D12F2C1B8200F64494 /* GeorgiaTechApp.app */,
+				660E90E02F2C1B8400F64494 /* GeorgiaTechAppTests.xctest */,
+				FCDC1CC53077E60C00C53659 /* GTCapacityWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66FB5720307D97BF008BCB48 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				66FB5721307D97D0008BCB48 /* GoogleService-Info.plist */,
+				66FB5722307D97D0008BCB48 /* Secrets.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FC3F2EDF309D575600098D46 /* GTBusWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F2ED8309D575600098D46 /* BusArrivalsWidget.swift */,
+				FC3F2ED9309D575600098D46 /* GTBusMediumView.swift */,
+				FC3F2EDA309D575600098D46 /* GTBusSmallView.swift */,
+				FC3F2EDB309D575600098D46 /* GTBusWidget.swift */,
+				FC3F2EDC309D575600098D46 /* GTBusWidgetEntry.swift */,
+				FC3F2EDD309D575600098D46 /* GTBusWidgetIntent.swift */,
+				FC3F2EDE309D575600098D46 /* GTBusWidgetProvider.swift */,
+				B079FBFA30AB2040005A2801 /* GTBusRectangularView.swift */,
+				B079FBFC30AB20A5005A2801 /* GTBusInlineView.swift */,
+			);
+			path = GTBusWidget;
+			sourceTree = "<group>";
+		};
+		FCDC1CC63077E60C00C53659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC1CC73077E60C00C53659 /* WidgetKit.framework */,
+				FCDC1CC93077E60C00C53659 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		660E90D02F2C1B8200F64494 /* GeorgiaTechApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660E90F42F2C1B8400F64494 /* Build configuration list for PBXNativeTarget "GeorgiaTechApp" */;
+			buildPhases = (
+				663EAAC42F788909003108C6 /* SwiftLint */,
+				660E90CD2F2C1B8200F64494 /* Sources */,
+				660E90CE2F2C1B8200F64494 /* Frameworks */,
+				660E90CF2F2C1B8200F64494 /* Resources */,
+				FCDC1CD83077E60D00C53659 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				663EAAC82F788F0D003108C6 /* PBXTargetDependency */,
+				FCDC1CD63077E60D00C53659 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				660E90D32F2C1B8200F64494 /* GeorgiaTechApp */,
+				663EAAD52F79655F003108C6 /* .github */,
+			);
+			name = GeorgiaTechApp;
+			packageProductDependencies = (
+				661DB55A2F757EA20024F7F1 /* FirebaseAnalytics */,
+				661DB55C2F757EA20024F7F1 /* FirebaseAppCheck */,
+				661DB55E2F757EA20024F7F1 /* FirebaseCrashlytics */,
+				661DB5602F757EA20024F7F1 /* FirebaseStorage */,
+				661DB5622F757F900024F7F1 /* FirebaseCore */,
+				660190402F88608400B1BC46 /* FirebaseAuth */,
+			);
+			productName = GeorgiaTechApp;
+			productReference = 660E90D12F2C1B8200F64494 /* GeorgiaTechApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		660E90DF2F2C1B8400F64494 /* GeorgiaTechAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660E90F72F2C1B8400F64494 /* Build configuration list for PBXNativeTarget "GeorgiaTechAppTests" */;
+			buildPhases = (
+				660E90DC2F2C1B8400F64494 /* Sources */,
+				660E90DD2F2C1B8400F64494 /* Frameworks */,
+				660E90DE2F2C1B8400F64494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				660E90E22F2C1B8400F64494 /* PBXTargetDependency */,
+			);
+			name = GeorgiaTechAppTests;
+			productName = GeorgiaTechAppTests;
+			productReference = 660E90E02F2C1B8400F64494 /* GeorgiaTechAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCDC1CC43077E60C00C53659 /* GTCapacityWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCDC1CDB3077E60D00C53659 /* Build configuration list for PBXNativeTarget "GTCapacityWidgetExtension" */;
+			buildPhases = (
+				FCDC1CC13077E60C00C53659 /* Sources */,
+				FCDC1CC23077E60C00C53659 /* Frameworks */,
+				FCDC1CC33077E60C00C53659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FCDC1CCB3077E60C00C53659 /* GTCapacityWidget */,
+				FCDC21983081633700C53659 /* GTDiningWidget */,
+				FCDC2E103090A1B200C53659 /* GTEventsWidget */,
+			);
+			name = GTCapacityWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = GTCapacityWidgetExtension;
+			productReference = FCDC1CC53077E60C00C53659 /* GTCapacityWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		660E90C92F2C1B8200F64494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					660E90D02F2C1B8200F64494 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					660E90DF2F2C1B8400F64494 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 660E90D02F2C1B8200F64494;
+					};
+					FCDC1CC43077E60C00C53659 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = 660E90CC2F2C1B8200F64494 /* Build configuration list for PBXProject "GeorgiaTechApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 660E90C82F2C1B8200F64494;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				661DB5592F757EA20024F7F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				663EAAC32F788793003108C6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 660E90D22F2C1B8200F64494 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				660E90D02F2C1B8200F64494 /* GeorgiaTechApp */,
+				660E90DF2F2C1B8400F64494 /* GeorgiaTechAppTests */,
+				FCDC1CC43077E60C00C53659 /* GTCapacityWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		660E90CF2F2C1B8200F64494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663EAAC62F788992003108C6 /* .swiftlint.yml in Resources */,
+				660E91592F2C1FAB00F64494 /* Package.resolved in Resources */,
+				66FB5725307D97D0008BCB48 /* Secrets.plist in Resources */,
+				66FB5726307D97D0008BCB48 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660E90DE2F2C1B8400F64494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FB5723307D97D0008BCB48 /* Secrets.plist in Resources */,
+				66FB5724307D97D0008BCB48 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDC1CC33077E60C00C53659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FB5727307D97D0008BCB48 /* Secrets.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		663EAAC42F788909003108C6 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f /opt/homebrew/bin/swiftlint ]; then\n  /opt/homebrew/bin/swiftlint\nelse\n  echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		660E90CD2F2C1B8200F64494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660E90DC2F2C1B8400F64494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDC1CC13077E60C00C53659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3F2EE0309D575600098D46 /* BusArrivalsWidget.swift in Sources */,
+				B079FBFB30AB2040005A2801 /* GTBusRectangularView.swift in Sources */,
+				FC3F2EE1309D575600098D46 /* GTBusWidgetProvider.swift in Sources */,
+				FC3F2EE2309D575600098D46 /* GTBusSmallView.swift in Sources */,
+				FC3F2EE3309D575600098D46 /* GTBusWidgetEntry.swift in Sources */,
+				B079FBFD30AB20A5005A2801 /* GTBusInlineView.swift in Sources */,
+				FC3F2EE4309D575600098D46 /* GTBusWidgetIntent.swift in Sources */,
+				FC3F2EE5309D575600098D46 /* GTBusMediumView.swift in Sources */,
+				FC3F2EE6309D575600098D46 /* GTBusWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		660E90E22F2C1B8400F64494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 660E90D02F2C1B8200F64494 /* GeorgiaTechApp */;
+			targetProxy = 660E90E12F2C1B8400F64494 /* PBXContainerItemProxy */;
+		};
+		663EAAC82F788F0D003108C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 663EAAC72F788F0D003108C6 /* SwiftLintBuildToolPlugin */;
+		};
+		FCDC1CD63077E60D00C53659 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCDC1CC43077E60C00C53659 /* GTCapacityWidgetExtension */;
+			targetProxy = FCDC1CD53077E60D00C53659 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		660E90F22F2C1B8400F64494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 726XXR46H7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		660E90F32F2C1B8400F64494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 726XXR46H7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		660E90F52F2C1B8400F64494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9P64WFBQB;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeorgiaTechApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show where you are on the Georgia Tech campus map.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aagarwal.GeorgiaTechApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		660E90F62F2C1B8400F64494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9P64WFBQB;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeorgiaTechApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show where you are on the Georgia Tech campus map.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aagarwal.GeorgiaTechApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		660E90F82F2C1B8400F64494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 726XXR46H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braydenh.GeorgiaTechAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeorgiaTechApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GeorgiaTechApp";
+			};
+			name = Debug;
+		};
+		660E90F92F2C1B8400F64494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 726XXR46H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braydenh.GeorgiaTechAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeorgiaTechApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GeorgiaTechApp";
+			};
+			name = Release;
+		};
+		FCDC1CD93077E60D00C53659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9P64WFBQB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GTCapacityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GTCapacityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aagarwal.GeorgiaTechApp.GTCapacityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCDC1CDA3077E60D00C53659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9P64WFBQB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GTCapacityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GTCapacityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aagarwal.GeorgiaTechApp.GTCapacityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		660E90CC2F2C1B8200F64494 /* Build configuration list for PBXProject "GeorgiaTechApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660E90F22F2C1B8400F64494 /* Debug */,
+				660E90F32F2C1B8400F64494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		660E90F42F2C1B8400F64494 /* Build configuration list for PBXNativeTarget "GeorgiaTechApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660E90F52F2C1B8400F64494 /* Debug */,
+				660E90F62F2C1B8400F64494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		660E90F72F2C1B8400F64494 /* Build configuration list for PBXNativeTarget "GeorgiaTechAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660E90F82F2C1B8400F64494 /* Debug */,
+				660E90F92F2C1B8400F64494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCDC1CDB3077E60D00C53659 /* Build configuration list for PBXNativeTarget "GTCapacityWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCDC1CD93077E60D00C53659 /* Debug */,
+				FCDC1CDA3077E60D00C53659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		661DB5592F757EA20024F7F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.11.0;
+			};
+		};
+		663EAAC32F788793003108C6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.63.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		660190402F88608400B1BC46 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 661DB5592F757EA20024F7F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		661DB55A2F757EA20024F7F1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 661DB5592F757EA20024F7F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		661DB55C2F757EA20024F7F1 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 661DB5592F757EA20024F7F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		661DB55E2F757EA20024F7F1 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 661DB5592F757EA20024F7F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		661DB5602F757EA20024F7F1 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 661DB5592F757EA20024F7F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		661DB5622F757F900024F7F1 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 661DB5592F757EA20024F7F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		663EAAC72F788F0D003108C6 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 663EAAC32F788793003108C6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 660E90C92F2C1B8200F64494 /* Project object */;
+}

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="pd" viewBox="0 0 720 468" role="img" aria-labelledby="pd-t pd-d">
+<title id="pd-t">Where a student's data goes</title>
+<desc id="pd-d">The phone sends data to seven places. Four can receive personal data: GT SSO, Firebase Authentication, the GT App API (one request carries the sign-in token) and Apple Maps, plus the support mailbox when the user writes. Saved places and settings never leave the phone.</desc>
+<style>
+svg.pd text { font-family: Roboto, "Helvetica Neue", Arial, sans-serif; fill: #242424; }
+svg.pd .h { font-weight: 600; font-size: 10px; letter-spacing: .14em; fill: #8F713D; }
+svg.pd .n { font-weight: 600; font-size: 12px; fill: #051E39; }
+svg.pd .nb { font-weight: 600; font-size: 11px; fill: #051E39; }
+svg.pd .s { font-weight: 400; font-size: 10.5px; fill: #515151; }
+svg.pd .l { font-weight: 600; font-size: 10.5px; fill: #051E39; }
+svg.pd .lg { font-weight: 600; font-size: 10.5px; fill: #8F713D; }
+svg.pd .num { font-weight: 700; fill: #8F713D; }
+svg.pd .halo { paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+svg.pd .w { fill: #fff; }
+</style>
+<defs><marker id="pd-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#051E39"/></marker><marker id="pd-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8F713D"/></marker><marker id="pd-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8A8A8A"/></marker></defs>
+<text x="10" y="12" class="h">THE PHONE</text>
+<text x="300" y="12" class="h">WHERE IT GOES</text>
+<rect x="10" y="20" width="220" height="412" rx="14" fill="#F7F3E8" stroke="#051E39" stroke-width="1.2"/>
+<rect x="22" y="34" width="196" height="170" rx="6" fill="#fff" stroke="#8F713D" stroke-width="1.2"/>
+<text x="32" y="54" class="n">Stays on the phone</text>
+<rect x="32" y="62" width="120" height="17" rx="8" fill="#8F713D" stroke="#8F713D" stroke-width="1.2"/>
+<text x="92" y="74" class="w" text-anchor="middle" style="font-weight:600;font-size:9px;letter-spacing:.08em">NEVER SENT TO US</text>
+<text x="32" y="102" class="s">Saved places, favorite dishes</text>
+<text x="32" y="119" class="s">Recent searches, Home order</text>
+<text x="32" y="136" class="s">Campus Links, hidden bus routes</text>
+<text x="32" y="153" class="s">Notification settings,</text>
+<text x="32" y="170" class="s">event reminders</text>
+<rect x="22" y="218" width="196" height="90" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="32" y="238" class="nb">Public campus data</text>
+<text x="32" y="254" class="s">Cached for offline use:</text>
+<text x="32" y="267" class="s">dining, events, news, dates,</text>
+<text x="32" y="280" class="s">locations, appliances, routes.</text>
+<text x="32" y="296" class="s">Not personal data.</text>
+<rect x="22" y="322" width="196" height="96" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="32" y="342" class="nb">Sign-in session</text>
+<text x="32" y="358" class="s">Code and token stay in memory.</text>
+<text x="32" y="371" class="s">The Firebase SDK keeps the</text>
+<text x="32" y="384" class="s">session until sign-out.</text>
+<line x1="230" y1="55" x2="300" y2="55" stroke="#8F713D" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#pd-g)"/>
+<rect x="300" y="30" width="410" height="50" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="312" y="47" class="n">GT SSO (OIT)</text>
+<text x="312" y="62" class="s">Password, typed at GT SSO in the system browser.</text>
+<text x="312" y="74" class="s">The app never sees it.</text>
+<rect x="626" y="42" width="74" height="22" rx="11" fill="#F7F3E8" stroke="#8F713D" stroke-width="1.2"/>
+<text x="663" y="57" class="lg" text-anchor="middle">Personal</text>
+<line x1="230" y1="113" x2="300" y2="113" stroke="#8F713D" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#pd-g)"/>
+<rect x="300" y="88" width="410" height="50" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="312" y="105" class="n">Firebase Authentication</text>
+<text x="312" y="120" class="s">Google, South Carolina. GT account: GT email, name,</text>
+<text x="312" y="132" class="s">and SSO subject ID. Guests: an anonymous ID only.</text>
+<rect x="626" y="100" width="74" height="22" rx="11" fill="#F7F3E8" stroke="#8F713D" stroke-width="1.2"/>
+<text x="663" y="115" class="lg" text-anchor="middle">Personal</text>
+<line x1="230" y1="171" x2="300" y2="171" stroke="#8F713D" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#pd-g)"/>
+<rect x="300" y="146" width="410" height="50" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="312" y="163" class="n">GT App API (Fly.io, Virginia)</text>
+<text x="312" y="178" class="s">Reads send no account data. The config/ request</text>
+<text x="312" y="190" class="s">carries the sign-in token. Fly.io sees request IPs.</text>
+<rect x="626" y="158" width="74" height="22" rx="11" fill="#F7F3E8" stroke="#8F713D" stroke-width="1.2"/>
+<text x="663" y="173" class="lg" text-anchor="middle">Personal</text>
+<line x1="230" y1="229" x2="300" y2="229" stroke="#051E39" stroke-width="1.6" marker-end="url(#pd-a)"/>
+<rect x="300" y="204" width="410" height="50" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="312" y="221" class="n">Firebase Crashlytics</text>
+<text x="312" y="236" class="s">Google. Crash trace, device model, OS and app version,</text>
+<text x="312" y="248" class="s">and an installation ID. No name or email.</text>
+<rect x="626" y="216" width="74" height="22" rx="11" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="663" y="231" class="l" text-anchor="middle">Technical</text>
+<line x1="230" y1="287" x2="300" y2="287" stroke="#8F713D" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#pd-g)"/>
+<rect x="300" y="262" width="410" height="50" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="312" y="279" class="n">Apple Maps (MapKit)</text>
+<text x="312" y="294" class="s">Search text and approximate location, for maps,</text>
+<text x="312" y="306" class="s">search and directions. We never save location.</text>
+<rect x="626" y="274" width="74" height="22" rx="11" fill="#F7F3E8" stroke="#8F713D" stroke-width="1.2"/>
+<text x="663" y="289" class="lg" text-anchor="middle">Personal</text>
+<line x1="230" y1="345" x2="300" y2="345" stroke="#8F713D" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#pd-g)"/>
+<rect x="300" y="320" width="410" height="50" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="312" y="337" class="n">Support mailbox (Gmail)</text>
+<text x="312" y="352" class="s">Only when the user writes to us: their email</text>
+<text x="312" y="364" class="s">address and message.</text>
+<rect x="626" y="332" width="74" height="22" rx="11" fill="#F7F3E8" stroke="#8F713D" stroke-width="1.2"/>
+<text x="663" y="347" class="lg" text-anchor="middle">Personal</text>
+<line x1="230" y1="403" x2="300" y2="403" stroke="#051E39" stroke-width="1.6" marker-end="url(#pd-a)"/>
+<rect x="300" y="378" width="410" height="50" rx="6" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="312" y="395" class="n">Image hosts named in the data</text>
+<text x="312" y="410" class="s">Some photos and article images load from the host</text>
+<text x="312" y="422" class="s">named in the data, which sees the phone's IP address.</text>
+<rect x="626" y="390" width="74" height="22" rx="11" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="663" y="405" class="l" text-anchor="middle">Technical</text>
+<rect x="10" y="444" width="14" height="14" rx="7" fill="#F7F3E8" stroke="#8F713D" stroke-width="1.2"/>
+<text x="30" y="455" class="s">Personal: can identify the user.</text>
+<rect x="240" y="444" width="14" height="14" rx="7" fill="#fff" stroke="#051E39" stroke-width="1.2"/>
+<text x="260" y="455" class="s">Technical: device or request details only.</text>
+</svg>
